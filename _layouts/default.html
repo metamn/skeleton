@@ -3,28 +3,9 @@
 
 {% include head.html %}  
 
-<body class="{{ page.css_id | downcase }}">
-  {% if page.background != _blank %}
-    <div id="background-image" class="desktop hidden">/assets/{{ page.background }}</div>
-  {% else %}
-    <div id="background-image" class="desktop hidden">/assets/background.jpg</div>
-  {% endif %}
-
-  <div id="container">
-    
-    <section id="sidebar">  
-      {% include header.html %}    
-      {% include menu.html %}
-    </section>
-        
-    <section id="content">
-      {{ content }}      
-      {% include footer.html %}  
-    </section>
-    
-    {% include news.html %}
-        
-  </div>
+<body>
+  This is a <h3>{{ site.title }}</h3>
+  Please check back later.
 </body>
 </html>
 
